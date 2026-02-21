@@ -13,7 +13,7 @@
       function myFunction()
       {
           // Declare a static variable
-          $staticVar = 0;
+           static $staticVar = 0;
 
           // Increment the static variable
           $staticVar++;
@@ -22,6 +22,7 @@
           return $staticVar;
       }
 
+      echo myFunction();
       echo myFunction();
       echo myFunction();
        
