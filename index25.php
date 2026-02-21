@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scopes</title>
+</head>
+<body>
+     <?php
+
+      $test = "Alex";
+     
+      function myFunction($test)
+      {
+           // Defines a local variable
+           $localVar = "Hello, world!";
+
+           // Use the local variable
+           return $test; // Output: Hello, world!
+      }
+
+      echo myFunction($test);
+       
+     ?>
+
+</body>
+</html>
